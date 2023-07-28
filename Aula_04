@@ -1,0 +1,25 @@
+bebida_favorita = "Suco cajú"
+preco_bebida = 10.00
+
+sobremesa_favorita = "Pudim de doce de leite"
+preco_sobremesa = 15.00
+
+almoco_favorito = "Arroz, feijão, carne de porco e salada"
+preco_almoco = 50.00
+orcamento = 200.00
+
+total = preco_almoco + preco_bebida + preco_sobremesa
+
+print("O seu almoço foi: ", almoco_favorito)
+print("A sua bebida foi: ", bebida_favorita)
+print("A sobremesa foi: ", sobremesa_favorita)
+convidados = int (input("Quantos convidados na mesa: "))
+print("O valor total gasto foi: ", total * convidados)
+print("O valor gasto por cada convidado foi: ", (total * convidados) / convidados)
+print("Meu orçamento é: ", orcamento)
+print("Meu orçamento final é: ", orcamento - total * convidados)
+
+if((total * convidados) <= orcamento):
+  print("Valor suficiente para pagamento!")
+else:
+  print("Vamos dividir o que faltou para pagar!")
