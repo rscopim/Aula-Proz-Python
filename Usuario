@@ -6,12 +6,12 @@ iniciar = True
 while(iniciar == True):
     print("Digite seu ano de nascimento: ")
     try:
-    ano = int(input())
-    if ano < 1922 or ano > 2023:
-        print("O ano precisa ser entre 1922 e 2023: ")
-    else:
-        idade = 2023 - ano
-        print("O", nome, "vai ter", idade em "2023")
-        iniciar = False
-except:
-print("Os anos precisam ser númericos")
+        ano = int(input())
+        if (ano < 1922) or (ano > 2023):
+            print("O ano precisa ser entre 1922 e 2023: ")
+        else:
+            idade = 2023 - ano
+            print("O", nome, "vai ter", idade, "anos em 2023")
+            iniciar = False
+    except:
+            print("Os anos precisam ser númericos")
