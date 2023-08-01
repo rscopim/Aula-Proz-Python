@@ -1,23 +1,17 @@
-def usuario(nasc, ano, nome):
-    pessoa = nasc - ano
-    if 0 < pessoa:
-        return print(
-            f"""
-            Nome : {nome}
-            Ano : {ano}
-            """
-        )
-    else:
-        raise Exception("Dados invalidos.")
-while True:
-    try:
-        nasc = int(input("Digite o ano de nascimento: "))
-        ano = int(input("Digite o ano: "))
-        nome = input("Digite seu nome: ")
+print("Digite seu nome: ")
+nome = input()
 
-        usuario(nasc, ano, nome)
-        break
-    except Exception as erro:
-        print(erro)
-        continue      
-      
+iniciar = True
+
+while(iniciar == True):
+    print("Digite seu ano de nascimento: ")
+    try:
+    ano = int(input())
+    if ano < 1922 or ano > 2023:
+        print("O ano precisa ser entre 1922 e 2023: ")
+    else:
+        idade = 2023 - ano
+        print("O", nome, "vai ter", idade em "2023")
+        iniciar = False
+except:
+print("Os anos precisam ser númericos")
