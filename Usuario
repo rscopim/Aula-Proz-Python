@@ -1,0 +1,23 @@
+def usuario(nasc, ano, nome):
+    pessoa = nasc - ano
+    if 0 < pessoa:
+        return print(
+            f"""
+            Nome : {nome}
+            Ano : {ano}
+            """
+        )
+    else:
+        raise Exception("Dados invalidos.")
+while True:
+    try:
+        nasc = int(input("Digite o ano de nascimento: "))
+        ano = int(input("Digite o ano: "))
+        nome = input("Digite seu nome: ")
+
+        usuario(nasc, ano, nome)
+        break
+    except Exception as erro:
+        print(erro)
+        continue      
+      
